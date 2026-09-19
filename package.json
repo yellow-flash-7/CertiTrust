@@ -1,0 +1,31 @@
+{
+  "name": "certitrust",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "node --test",
+    "db:check": "node scripts/db-check.js",
+    "db:seed": "node scripts/seed.js",
+    "db:setup": "node scripts/db-setup.js",
+    "db:backfill-documents": "node scripts/backfill-documents.js",
+    "ai:start": "python ai_service/app.py"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^2.0.2",
+    "pg": "^8.23.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
